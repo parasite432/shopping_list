@@ -7,6 +7,7 @@ import {
   Text,
   StatusBar,
 } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 const App = () => {
   return (
@@ -16,8 +17,10 @@ const App = () => {
       </View>
       <View style={styles.header}>
         <Text style={styles.heading}> All Lists </Text>
-        <Image
-          source={require("./img/add/add-45.png")}
+        <Ionicons
+          name="add-circle"
+          size={40}
+          color="black"
           style={styles.imageProfile}
         />
       </View>
